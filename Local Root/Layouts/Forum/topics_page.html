@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title></title>
+<link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/base.css" rel="stylesheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/screen.css" rel="stylesheet" />
+<link rel="stylesheet" href="/CatalystStyles/Box.css" type="text/css" media="screen" />
+<meta content="text/html;charset=utf-8" http-equiv="content-type" />
+</head>
+<body>
+
+	<div class="forum-container">
+	<h1>{tag_forumname}</h1>
+	<div class="error">{module_error}</div>
+	<div class="editor">{tag_editor}</div>
+	<ul class="cap-top">
+		<li class="user">{module_whosloggedin}</li>
+		<li class="actions">
+			{tag_forumsubscribe,<img alt="" src="/CatalystImages/Forum_NewTopics_Subscribe.png" />,<img alt="" src="/CatalystImages/Forum_NewTopics_Unsubscribe.png" />} {tag_newtopiclink,<img src="/CatalystImages/Forum_NewTopic.png" />}
+		</li>
+	</ul>
+	<table class="topic-list" cellspacing="0" cellpadding="0">
+			<tr class="header">
+				<th class="name">Topic Name</th>
+				<th class="replies">Replies</th>
+				<th class="views">Views</th>
+				<th class="date">Last Post</th>
+			</tr>
+			<tr>
+        		<td colspan="4">
+					{tag_topiclist}
+    			</td>
+			</tr>
+	</table>
+	<ul class="cap-bottom">
+		<li class="nav-page">{tag_previouspage,<img src="/CatalystImages/Module_Previous.png" />} {tag_nextpage,<img src="/CatalystImages/Module_Next.png" />}</li>
+		<li class="actions">{tag_forumsubscribe,<img alt="" src="/CatalystImages/Forum_NewTopics_Subscribe.png" />,<img alt="" src="/CatalystImages/Forum_NewTopics_Unsubscribe.png" />} {tag_newtopiclink,<img src="/CatalystImages/Forum_NewTopic.png" />}</li>
+	</ul>
+	</div>
+
+	
+</body>

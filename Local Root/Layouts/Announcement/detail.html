@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title></title>
+<link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/base.css" rel="stylesheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/screen.css" rel="stylesheet" />
+<link rel="stylesheet" href="/CatalystStyles/Box.css" type="text/css" media="screen" />
+<meta content="text/html;charset=utf-8" http-equiv="content-type" />
+</head>
+<body>
+<div class="announcement-details">   <h1>{tag_subject}</h1>   <span class="date">{tag_releasedate}</span>   {tag_body}   <hr />   <div class="comment-form">   <h5>Comment</h5>   <form name="catratingform2343" onSubmit="return checkWholeForm2343(this)" method="post" action="/RatingProcess.aspx?OID={module_oid}&amp;OTYPE={module_otype}">      <div class="form">   <div class="item">   <label>Was this helpful?</label><br/>   No   <input type="radio" name="Rating" value="1" />   <input type="radio" name="Rating" value="2" />   <input type="radio" name="Rating" checked="checked" value="3" />   <input type="radio" name="Rating" value="4" />   <input type="radio" name="Rating" value="5" />   Very   </div>   <div class="item">   <label>Name (optional)</label><br/>   <input class="cat_textbox_small" type="text" name="FullName" maxlength="255" />   </div>   <div class="item">   <label>Website (optional)</label><br/>   <input maxlength="255" name="website" class="cat_textbox_small" />   </div>   <div class="item">   <label>Email Address (optional)</label><br/>   <input class="cat_textbox_small" type="text" name="EmailAddress" maxlength="255" />   </div>   <div class="item">   <label>Enter Word Verification in box below</label><br />   {module_captchav2}   </div>				    <div class="item">   <label>Comment (optional)</label><br/>   <textarea class="cat_listbox_small" name="Feedback"></textarea>   </div>   <div class="item">   <input class="cat_button" type="submit" value="Submit" />   </div>   </div>   <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>   <script type="text/javascript">   //<![CDATA[
+   function checkWholeForm2343(theForm){var why = "";if (theForm.EmailAddress) if (theForm.EmailAddress.value.length > 0) why += checkEmail(theForm.EmailAddress.value);if (theForm.CaptchaV2) why += isEmpty(theForm.CaptchaV2.value, "Enter Word Verification in box below");if (why != ""){alert(why);return false;}return true;}   
+//]]>   </script>   </form>   </div>   <div class="goBack">{module_referreraddress,,Go Back}</div>   </div>
+</body>

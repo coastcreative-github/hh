@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title></title>
+<link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/base.css" rel="stylesheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/screen.css" rel="stylesheet" />
+<link rel="stylesheet" href="/CatalystStyles/Box.css" type="text/css" media="screen" />
+<meta content="text/html;charset=utf-8" http-equiv="content-type" />
+</head>
+<body>
+
+<div class="system-error-message">
+	<h1>Unauthorized Access</h1>
+	<p>
+		We could not display the content you requested. This is because it is held within a Secure Zone. Please log in to access this content, or alternatively contact us to request access.
+	</p>
+	<p>
+		<a href="/">Click here</a> to go back to our Home Page.
+	</p>
+	<hr />
+	<form name="catseczoneform68244" onsubmit="return checkWholeForm68244(this)" action="/ZoneProcess.aspx?ZoneID=-1&amp;OID={module_oid}&amp;OTYPE={module_otype}" method="post">
+		<div class="form">
+			<div class="item">
+				<label>Username</label><br/><input class="textbox" maxlength="255" name="Username" />
+			</div>
+			<div class="item">
+				<label>Password</label><br/><input class="textbox" type="password" maxlength="255" value="" name="Password" />
+			</div>
+			<div class="item">
+				<input class="button" type="submit" value="Login" />&nbsp;<a href="{tag_passwordRetrieveLink}">Lost password?</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+		<script type="text/javascript">function checkWholeForm68244(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}</script>
+	</form>
+</div>
+</body>

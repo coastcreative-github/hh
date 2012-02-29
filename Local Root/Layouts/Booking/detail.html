@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title></title>
+<link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/base.css" rel="stylesheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/screen.css" rel="stylesheet" />
+<link rel="stylesheet" href="/CatalystStyles/Box.css" type="text/css" media="screen" />
+<meta content="text/html;charset=utf-8" http-equiv="content-type" />
+</head>
+<body>
+
+<div class="booking-container">
+	<h1>{tag_name}</h1>
+	<p>
+		<strong>Date: </strong><span class="date">{tag_date}</span><br />
+		<strong>Capacity: </strong><span class="capacity">{tag_capacity}</span> ({tag_percentfull} booked)
+	</p>
+	
+	<h2>Details</h2>
+	{tag_body}
+
+	<form name="catwebformform48727" onsubmit="return checkWholeForm48727(this)" action="/FormProcessv2.aspx?WebFormID=10254&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" method="post" enctype="multipart/form-data" id="catwebformform48727">
+		
+		<div class="form-container">
+			<h2>Booking</h2>
+			<p>&bull; Required</p>
+			<div class="form">
+				<div class="item">
+					<label>Title</label><br/>
+						<select class="cat_dropdown_smaller" name="Title">
+						<option value="3395">DR</option>
+						<option value="3393">MISS</option>
+					 	<option value="3391" selected="selected">MR</option>
+					 	<option value="3392">MRS</option>
+					 	<option value="3394">MS</option>
+						</select>
+				</div>
+				<div class="item">
+					<label>First Name</label><br/>
+					<input class="cat_textbox" maxlength="255" name="FirstName" id="FirstName" />&nbsp;&bull;
+				</div>
+				<div class="item">
+					<label>Last Name</label><br/>
+					<input class="cat_textbox" maxlength="255" name="LastName" id="LastName" />&nbsp;&bull;
+				</div>
+				<div class="item">
+					<label>Email</label><br/>
+					<input class="cat_textbox" maxlength="255" name="EmailAddress" id="EmailAddress"/>&nbsp;&bull;
+				</div>
+				<div class="item">
+					<label>Company</label><br/>
+					<input class="cat_textbox" maxlength="255" name="Company" id="Company" />
+				</div>
+				<div class="item">
+					<label>Work Phone Number</label><br/>
+					<input class="cat_textbox" maxlength="255" name="WorkPhone" id="WorkPhone" />
+				</div>
+				<div class="item">
+					<input class="cat_button" id="catwebformbutton" type="submit" value="Submit" />
+				</div>
+			</div>
+			<div class="error">{module_error}</div>
+					
+		<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js" ></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			var submitcount48727 = 0;function checkWholeForm48727(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if(why != ""){alert(why);return false;}if(submitcount48727 == 0){submitcount48727++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+			//]]>
+		</script>
+		</div><!-- END .form-container -->
+		</form>
+
+		<div class="go-back">{module_referreraddress,,Go Back}</div>
+</div><!-- END .booking-container -->
+
+</body>

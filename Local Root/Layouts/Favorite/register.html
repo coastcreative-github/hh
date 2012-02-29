@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title></title>
+<link href="/StyleSheets/ModuleStyleSheets.css" type="text/css" rel="StyleSheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/base.css" rel="stylesheet" />
+<link type="text/css" media="screen,projection" href="/StyleSheets/screen.css" rel="stylesheet" />
+<link rel="stylesheet" href="/CatalystStyles/Box.css" type="text/css" media="screen" />
+<meta content="text/html;charset=utf-8" http-equiv="content-type" />
+</head>
+<body>
+
+<h1>Login or Register</h1>
+<div class="error">{module_error}</div>
+
+<div class="favourite-registration">
+	<h2>Existing User - Login</h2>
+	<form onsubmit="return check_RegistrationForm(this,'login')" action="FavoriteProcess.aspx?A=login&amp;OID={module_oid}&amp;OTYPE={module_otype}" method="post">
+	<div class="form">
+		<div class="item">
+			<input name="OrderLogin_Info" type="hidden" />	
+			<label>Username</label><br />
+			<input class="cat_textbox" maxlength="255" name="Username" />
+		</div>
+		<div class="item">
+			<label>Password</label><br />
+			<input class="cat_textbox" maxlength="255" name="Password" type="password" />
+		</div>	
+		<div class="item">
+			<input class="cat_button" value="Login" type="submit" />
+			<a onclick="document.getElementById('lostpassword').style.display='inline';return false;" href="#">Forgot your username/password?</a>
+		</div>
+	</div>
+	</form>
+	
+	<form id="lostpassword" style="display: none;" name="catseczonelpform57982" action="/LostPasswordProcess.aspx" method="post">
+		<h2>Forgot Password</h2>
+		<div class="form">
+			<div class="item">
+				<label>Enter Username or Email Address</label><br />
+				<input class="cat_textbox" maxlength="255" name="Username" />
+			</div>
+			<div class="item">
+				<input class="cat_button" value="Retrieve" type="submit" /><br />
+			</div>
+		</div>
+	</form>
+
+	<hr />
+
+	<h2>New User - Registration</h2>
+	<form onsubmit="return check_RegistrationForm(this,'newuser')" action="FavoriteProcess.aspx?A=register&amp;OID={module_oid}&amp;OTYPE={module_otype}" method="post">
+		<div class="form">
+			<div class="item">
+				<input name="OrderRegistration_Info" type="hidden" />
+				<label>Name</label><br />
+				<input class="cat_textbox" name="Registration_Name" />
+			</div>
+			<div class="item">
+				<label>Email</label><br />
+				<input class="cat_textbox" name="Registration_Email" />
+			</div>
+			<div class="item">
+				<label>User Name</label><br />
+				<input class="cat_textbox" name="Registration_Username" />
+			</div>
+			<div class="item">
+				<label>Password</label><br />
+				<input class="cat_textbox" name="Registration_Password" type="password" />
+			</div>
+			<div class="item">
+				<label>Confirm Password</label><br />
+				<input class="cat_textbox" maxlength="255" name="Registration_ConfirmPassword" type="password" />
+			</div>			
+			<div class="item">
+				<input class="cat_button" value="Register" type="submit" />
+			</div>
+		</div>
+	</form>
+</div><!-- END .favourite-registration -->
+
+<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+<script type="text/javascript">
+
+	//<![CDATA[
+	 function check_RegistrationForm(theForm,name) {  var why = "";  if (name == 'login') {  why += isEmpty(theForm.Username.value, "Username");  why += isEmpty(theForm.Password.value, "Password");  }  else {  why += isEmpty(theForm.Registration_Name.value, "Full Name");  why += isEmpty(theForm.Registration_Email.value, "Email Address");  why += isEmpty(theForm.Registration_Username.value, "Username");  why += isEmpty(theForm.Registration_Password.value, "Password");  why += isEmpty(theForm.Registration_ConfirmPassword.value, "Password Confirmation");  }  if (why != "") {   alert(why);   return false;  }    return true; }
+	//]]>
+
+</script>
+
+</body>

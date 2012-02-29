@@ -1,0 +1,46 @@
+<div id="myMenu1">{tag_menugroup}</div>
+
+<!-- the following script is needed to set the selected state -->
+<script type="text/javascript" src="/CatalystScripts/Java_DynMenusSelectedCSS.js"></script>
+<script type="text/javascript" >
+	// ids need to be unique per page, use different ones if you are including multiple menus in the same page
+	// id of the nav tag, used above
+	var divTagId = "myMenu1";
+
+	// desired id for 1st <ul> tag 
+	var ulTagId = "myMenu1List";
+
+	// desired class for 1st <ul> tag 
+	var ulTagClass = "";
+
+	if ((null !== ulTagId) && ("" !== ulTagId)) {
+		document.getElementById(divTagId).getElementsByTagName("ul")[0].setAttribute("id",ulTagId);
+	}
+	if ((null !== ulTagClass) && ("" !== ulTagClass)) {
+		document.getElementById(divTagId).getElementsByTagName("ul")[0].className = ulTagClass;
+	}
+	
+	// this will set the selected state
+	if ((null !== ulTagId) && ("" !== ulTagId)) {
+		catSetSelectedCSSItem(ulTagId);
+	}
+</script>
+
+<!-- 
+For a sample CSS menu:
+1. download the archive from http://lwis.net/free-css-drop-down-menu/ 
+2. unpack the css files in your site
+3. set the ulTagClass above to
+	var ulTagClass = "dropdown dropdown-horizontal";
+4. uncomment the following
+5. if necessary, correct the path to reflect the files' location in your site
+-->
+<!--
+<link href="/css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/dropdown/themes/default/default.css" media="screen" rel="stylesheet" type="text/css" />
+<style>
+ul.dropdown li.selected>a{
+	border-bottom: 1px solid #000000;
+}
+</style>
+-->
