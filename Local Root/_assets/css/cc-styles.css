@@ -1,9 +1,16 @@
 /*!
- * Happy Holidays Motorhome Rentals v1.0
+ * Happy Holidays styles for Coast Creative v0.1
  *
  * Copyright 2012 Coast Creative
  *
- * Designed and built with all the love in the world by Derek Thomas and Robin Leboe.
+ * Designed and built with all the love in the world by Robin Leboe and Derek Thomas
  */
- 
- 
+
+.hero-unit {
+	position: relative
+}
+
+.hero-unit aside {
+	background-image: url("/_assets/img/hero/01-mountains.jpg")
+	position: absolute
+}
