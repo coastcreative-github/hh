@@ -7,10 +7,29 @@
  */
 
 .hero-unit {
-	position: relative
+	position: relative;
+	background-image: url("/_assets/img/hero/01-mountains.jpg");
+	height: 130px;
 }
 
 .hero-unit aside {
-	background-image: url("/_assets/img/hero/01-mountains.jpg")
-	position: absolute
+	position: absolute;
+	background-image: url("/_assets/img/hero/hero-text-bg.png");
+	height: 250px;
+	left: 860px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	color: white;
+	/*padding-top: 7px;*/
+	/*padding-bottom: 7px;*/
+	/*padding-right: 7px;*/
+	/*padding-left: 7px;*/
+	/*	-webkit-border-radius: 6px;*/
+	/*	-moz-border-radius: 6px;*/
+	/*border-radius: 0px 6px 6px 0px;*/
+}
+
+.hero-unit p {
+	line-height: 21px;
 }
