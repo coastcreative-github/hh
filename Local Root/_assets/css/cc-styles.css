@@ -7,12 +7,12 @@
  */
 
 .hero-unit {
-	position: relative;
 	background-image: url("/_assets/img/hero/01-mountains.jpg");
 	background-repeat: no-repeat;
 	height: 250px;
-	padding: 80px
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	padding: 0px;
+	position: relative;
 }
 
 .hero-unit aside {
@@ -20,11 +20,11 @@
 	background-image: url("/_assets/img/hero/hero-text-bg.png");
 	background-repeat: no-repeat;
 	/*height: 250px;*/
-	left: 780px;
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
 	color: white;
+	left: 780px;
 	/*padding-top: 7px;*/
 	/*padding-bottom: 7px;*/
 	/*padding-right: 7px;*/
@@ -34,13 +34,21 @@
 	/*border-radius: 0px 6px 6px 0px;*/
 }
 
+.hero-unit h2 {
+	color: white
+}
+
 .hero-unit p {
 	bottom: 40px;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 200;
 	height: 90px;
 	line-height: 21px;
-	margin: 30px;
+	margin: 4px;
 	position: relative;
 	top: 0;
+}
+
+.hero-unit a {
+	color: white
 }
