@@ -9,14 +9,18 @@
 .hero-unit {
 	position: relative;
 	background-image: url("/_assets/img/hero/01-mountains.jpg");
-	height: 130px;
+	background-repeat: no-repeat;
+	height: 250px;
+	padding: 80px
+	margin-bottom: 30px
 }
 
 .hero-unit aside {
 	position: absolute;
 	background-image: url("/_assets/img/hero/hero-text-bg.png");
-	height: 250px;
-	left: 860px;
+	background-repeat: no-repeat;
+	/*height: 250px;*/
+	left: 780px;
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
@@ -31,5 +35,12 @@
 }
 
 .hero-unit p {
+	bottom: 40px;
+	font-size: 18px;
+	font-weight: 200;
+	height: 90px;
 	line-height: 21px;
+	margin: 30px;
+	position: relative;
+	top: 0;
 }
