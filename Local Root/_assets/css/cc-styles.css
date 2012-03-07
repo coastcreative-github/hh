@@ -42,8 +42,13 @@
 	/*border-radius: 0px 6px 6px 0px;*/
 }
 
+.hero-unit h1 {
+	font-size: 60px;
+}
+
 .hero-unit h2 {
 	color: white;
+	font-size: 30px;
 }
 
 .hero-unit p {
@@ -51,12 +56,17 @@
 	font-size: 12px;
 	font-weight: 200;
 	height: 90px;
-	line-height: 21px;
+	line-height: 16px;
 	margin: 4px;
 	position: relative;
 	top: 0;
+	font-style: italic;
 }
 
 .hero-unit a {
 	color: white;
+	float: right;
+	font-size: 18px;
+	margin-right: 26px;
+	/*font-style: bold;*/
 }
