@@ -10,6 +10,15 @@
 	background-color: #55683b;
 	background-image: none;
 	box-shadow: none;
+	padding-left: 240px;
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+	background-color: #55683B;
+}
+
+.navbar .nav > li > a {
+	color: white;
 }
 
 .hero-unit {
