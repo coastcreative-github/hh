@@ -6,51 +6,28 @@
  * Designed and built with all the love in the world by Robin Leboe and Derek Thomas
  */
 
-h1#hh-logo {
-    display: block;
-    left: 0;
-    margin: 0;
-    position: relative;
-    width: 250px;
-    }
-    
-    h1#hh-logo a:link, h1#hh-logo a:visited {
-    background: url("/_assets/img/logo.png") no-repeat scroll 0 0 transparent;
-    display: block;
-    height: 120px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-indent: -9999px;
-    top: 50px;
-    z-index: 1;
-    }
 
-
-
-Robin Leboe - Web Business Consultant, Media Producer
-Cell: 604-240-5285
-www.coastcreative.ca
-www.facebook.com/CoastCreativeWeb
-twitter.com/#!/Coast_Creative
-
-
-        
--------------------------------------------------------------------------------
-This e-mail message is directed in confidence solely to the person or entity
-to whom it is addressed. This e-mail or some of its contents may be subject
-to copyright law. All rights to any copyrighted material contained herein are
-expressly reserved. Any review, retransmission, dissemination or other use of
-the contents of this e-mail by persons or entities other than the intended
-recipient is prohibited.  We would appreciate a reply if this e-mail has been
-delivered to someone other than its intended recipient. Thank you.
--------------------------------------------------------------------------------
+#logo {
+    left: -15px;
+    position: absolute;
+}
 
 .navbar-fixed-top .navbar-inner {
 	background-color: #55683b;
 	background-image: none;
 	box-shadow: none;
-	padding-left: 240px;
+}
+
+.navbar-inner {
+	height: 55px;
+}
+
+.container {
+	position: relative;
+}
+
+#cc-main-menu {
+	margin: 15px 0 0 190px;
 }
 
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
@@ -59,13 +36,26 @@ delivered to someone other than its intended recipient. Thank you.
 
 .navbar .nav > li > a {
 	color: white;
+	font-size: 15px;
+}
+
+#CAT_Search {
+	background-color: #AAB49D;
+	border: medium none;
+	height: 21px;
+	padding: 0 0 0 10px;
+	width: 202px;
+}
+
+.search-box input[type="image"] {
+  margin-left: -28px;
 }
 
 .hero-unit {
 	background-image: url("../../_assets/img/hero/01-mountains.jpg");
 	background-repeat: no-repeat;
 	height: 291px;
-	margin-bottom: 0px;
+	margin: 80px 0 0 0;
 	padding: 0px;
 	position: relative;
 }
@@ -119,4 +109,8 @@ delivered to someone other than its intended recipient. Thank you.
 	font-size: 18px;
 	margin-right: 26px;
 	/*font-style: bold;*/
+}
+
+.row {
+  margin-top: 15px;
 }
