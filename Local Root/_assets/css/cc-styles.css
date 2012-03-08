@@ -53,11 +53,12 @@
 
 .hero-unit p {
 	bottom: 40px;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 200;
 	height: 90px;
 	line-height: 16px;
 	margin: 4px;
+	margin-right: 26px;
 	position: relative;
 	top: 0;
 	font-style: italic;
