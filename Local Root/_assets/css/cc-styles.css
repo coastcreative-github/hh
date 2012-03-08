@@ -6,7 +6,7 @@
  * Designed and built with all the love in the world by Robin Leboe and Derek Thomas
  */
 
-.navbar-inner {
+.navbar-fixed-top .navbar-inner {
 	background-color: #55683b;
 	background-image: none;
 	box-shadow: none;
