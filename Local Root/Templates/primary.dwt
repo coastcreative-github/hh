@@ -57,7 +57,9 @@
 
     <div class="container">
     <!-- TemplateBeginEditable name="ContentArea1" -->
-    {tag_pagecontent}
+    <div id="page-content">
+      {tag_pagecontent}
+    </div>
     <!-- TemplateEndEditable -->
 
       
