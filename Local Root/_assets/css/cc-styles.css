@@ -12,14 +12,18 @@
     position: absolute;
 }
 
-.navbar-fixed-top .navbar-inner {
+/*.navbar-fixed-top .navbar-inner {*/
+.navbar .navbar-inner {
 	background-color: #55683b;
 	background-image: none;
 	box-shadow: none;
+	margin-top: 0px;
 }
 
 .navbar-inner {
 	height: 55px;
+	border-radius: 0 0 0 0;
+	margin-top: 0px 0px 0px 0px;
 }
 
 .container {
