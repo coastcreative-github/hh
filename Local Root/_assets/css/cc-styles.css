@@ -28,6 +28,7 @@
 
 .container {
 	position: relative;
+	width: 1140px;
 }
 
 #cc-main-menu {
@@ -48,7 +49,7 @@
 	border: medium none;
 	height: 21px;
 	padding: 0 0 0 10px;
-	width: 202px;
+	width: 180px;
 }
 
 .search-box input[type="image"] {
@@ -120,6 +121,81 @@
 }
 
 #page-content{
-    line-height: 18px;
+  line-height: 18px;
 	margin-top: 78px;
+	position: relative;
+}
+
+.page-image {
+	float: right;
+	padding: 0 25px 0 50px;
+}
+
+.page-image img {
+	border: medium solid #555555;
+	box-shadow: 3px 3px 4px 1px #999999;
+	display: block;
+	margin-bottom: 10px;
+}
+.page-image-caption {
+	font-size: 12px;
+	text-align: center;
+	padding-right: 0;
+}
+
+section.body-copy {
+	width:70%;
+}
+
+section.body-copy h1 {
+	color: #55683B;
+}
+
+section.body-copy h2 {
+	color: #666667;
+	font-size: 22px;
+	padding: 20px 0 5px;
+}
+
+section.body-copy p {
+	font-size: 14px;
+	line-height: 1.6em;
+	padding-right: 25px;
+}
+
+#call-to-action {
+	float: right;
+	padding-right: 25px;
+	text-align: right;
+}
+
+.contact-tel {
+	
+}
+
+.contact-hours {
+	
+}
+
+#side-bar {
+	border: 2px solid #ACB3A1;
+	border-radius: 5px 5px 5px 5px;
+	display: block;
+	height: 500px;
+	position: absolute;
+	right: 25px;
+	top: 30px;
+	width: 225px;
+}
+
+#side-bar img {
+	margin: 10px;
+}
+
+#side-bar p {
+	color: #777777;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
 }

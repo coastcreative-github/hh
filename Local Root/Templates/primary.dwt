@@ -11,7 +11,7 @@
 
     <!-- Le styles -->
     <link href="/_assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/_assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- <link href="/_assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
  
 	<!-- Coast Creative Styles -->
     <link href="/_assets/css/cc-styles.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
         	<a href="/"><img id="logo" src="/_assets/img/logo.png" width="201" height="118" alt="Happy Holidays Motorthome Rental"></a> 
@@ -44,19 +44,21 @@
               <input class="cat_button" type="image" src="/_assets/img/icons/search.png" value="Search" />
             </div>
           </form>
+          <div id="call-to-action">
+            <h2 class="contact-tel">Call Today: +1 604-886-9025 </h2>
+            <p class="contact-hours">Monday to Friday 9:00 AM - 5:00 PM PST</p>
+          </div>
        	</div>
       </div>
 	
     </div>
 
     <div class="container">
-    <!-- TemplateBeginEditable name="ContentArea1" -->
-    <div id="page-content">
+    <div id="page-content"> 
+    <!-- TemplateBeginEditable name="ContentArea" -->
       {tag_pagecontent}
-    </div>
     <!-- TemplateEndEditable -->
-
-      
+    </div>
       <hr>
 
       <footer>
