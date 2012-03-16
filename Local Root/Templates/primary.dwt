@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/primary.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- InstanceBeginEditable name="doctitle" --><title>Happy Holidays Motorhomes</title><!-- InstanceEndEditable -->
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Happy Holidays Motorhomes</title>
+    <!-- TemplateEndEditable -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -25,11 +27,8 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
-    <!-- InstanceBeginEditable name="head" -->
-
-
-    
-<!-- InstanceEndEditable -->
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
   </head>
 
   <body>
@@ -56,99 +55,9 @@
 
     <div class="container">
     <div id="page-content"> 
-    <!-- InstanceBeginEditable name="ContentArea" -->
-<h1>S&#38;C</h1>
-<p>
-Daily Rates (minimum rental is 7 nights)
-<br>
-*All Prices are in Canadian Dollars*
-</p>
-<p>
-SNOWBIRDS:
-<br>
-Winter rental (November - April) is only available when traveling 
-SOUTH.
-RV's are not winterized and cannot be driven on snow covered 
-roads. Minimum rental is one month.
-</p>
-<p>
-RENTAL PRICING DETAILS:
-<br>
-There is NO preparation fee.
-</p>
-<p>
-The price is based on double occupancy, that means FREE person 
-kits for 2 persons (bedding, towels, dishes, pots &#38; pans, kitchen 
-utensils, cutlery, camping chairs, and a first aid kit, among other 
-items.) Additional person kits are charged with only $75 per person.
-</p>
-<p>
-FREE 100 kms per day are included.
-</p>
-<p>
-FREE pick up from the Vancouver Airport or hotel is included.
-(not available for short term rentals under 10 days)
-</p>
-<p>
-NO charge for second or third driver.
-</p>
-<p>
-NO additional charge for pick up and/or drop off on Saturdays.
-We are closed Sundays.
-</p>
-<p>
-</p>
-<p>
-EXTRAS: </span>Child or baby car-seats (booster seats) for the little 
-travellers: $50
-gas barbeque/grill: $50, bike rack: $50.
-</p>
-<p>
-12% harmonized sales tax (HST) must be added to all prices.
-</p>
-<p>
-These rates are based on a minimum rental period of 10 days.
-(Rentals of a shorter period are available at a $150 surcharge.)
-We accept Visa and Mastercard or payments by bank transfer.
-</p>
-<p>
-Mileage packages:
-<br>
-<ul>
-<li>100 km per day are included in the prices listed above.</li>
-<li>Mileage package 1: 500 km for $165.00</li>
-<li>Mileage package 2: 1000 km for $320.00</li>
-<li>Additional mileage is calculated at 35 cents per kilometer</li>
-</ul>
-</p>
-<p>
-AVAILABLE DISCOUNTS:
-<ol start="a" type="a">
-<li>5 % Long-term discount for bookings longer than 28 days.
-<li>10 % Long term discount for bookings over 45 days
-<li>10 % EARLY BIRD SPECIAL discount
-(for rentals in 2012 starting after May 31) 
-when paid in full before February 15, 2011.
-Discounts can be combined to a MAX of 15%</li>
-</ol>
-</p>
-<p>
-INSURANCE AND COLLISION DAMAGE REDUCER (CDR):
-<br>
-All vehicles are automatically covered with a $5 million liability 
-insurance and carry a $4,000.00 collision deductible. The renter&#8217;s 
-collision deductible can be reduced from $4,000.00 to $600.00 
-($1000 for the 31'MH) by purchasing the CDR. The current rate is 
-$20.00 per day ($25.00 for the 31'MH), plus taxes.
-We recommend travel plan cancellation insurance.
-Upon request, we will send you a copy of the terms and conditions 
-of our rental agreement.
-</p>
-<p>
-Copyright 2011 &#169; HappyHolidays Motorhome, All Rights Reserved
-</p>
-    
-<!-- InstanceEndEditable -->
+    <!-- TemplateBeginEditable name="ContentArea" -->
+      {tag_pagecontent}
+    <!-- TemplateEndEditable -->
     </div>
       <hr>
 
@@ -179,4 +88,4 @@ Copyright 2011 &#169; HappyHolidays Motorhome, All Rights Reserved
     <script src="/assets/js/bootstrap-typeahead.js"></script>
 
   </body>
-<!-- InstanceEnd --></html>
+</html>
