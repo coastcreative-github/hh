@@ -6,6 +6,17 @@
  * Designed and built with all the love in the world by Robin Leboe and Derek Thomas
  */
 
+html {
+	background: url(/_assets/img/bg/hh-mountain-img_0098.jpg) no-repeat center 55px scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	background-color: transparent;
+}
 
 #logo {
     left: -15px;
@@ -120,10 +131,21 @@
   margin-top: 15px;
 }
 
-#page-content{
+/*#page-content{
   line-height: 18px;
 	margin-top: 78px;
 	position: relative;
+}*/
+
+#page-content {
+	background-color:rgba(255,255,255,0.7);
+	/*background-color: #EFF6FC;*/
+	border-radius: 5px 5px 5px 5px;
+	line-height: 18px;
+	margin-top: 70px;
+	padding: 50px;
+	position: relative;
+	z-index: 1;
 }
 
 .page-image {
@@ -199,3 +221,7 @@ section.body-copy p {
 	padding: 10px;
 	text-align: center;
 }
+
+/*#fs-bg { position: fixed; top: 0; left: 0; z-index: -1; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }*/
