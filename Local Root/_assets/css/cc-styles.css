@@ -227,5 +227,9 @@ section.body-copy p {
 .bgheight { height: 100%; }*/
 
 .dead a {
-	color: red
+	color: red;
+}
+
+.rates {
+	width: 900px;
 }
